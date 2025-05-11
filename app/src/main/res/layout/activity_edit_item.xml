@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Pole edycyjne dla gatunku -->
+        <EditText
+            android:id="@+id/speciesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gatunek"
+            android:inputType="text" />
+
+        <!-- Pole edycyjne dla wagi -->
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Waga (kg)"
+            android:inputType="numberDecimal" />
+
+        <!-- Pole edycyjne dla długości -->
+        <EditText
+            android:id="@+id/lengthEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Długość (m)"
+            android:inputType="numberDecimal" />
+
+        <!-- Pole edycyjne dla notatki -->
+        <EditText
+            android:id="@+id/noteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notatka"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/waterTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            />
+
+        <!-- Mapa -->
+        <FrameLayout
+            android:id="@+id/mapFrame1"
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+            android:layout_marginTop="20dp">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="279dp" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="312dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Podgląd zdjęcia"
+            android:scaleType="centerCrop" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1.0">
+
+    <Button
+        android:id="@+id/photoButton"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:layout_width="0dip"
+        android:layout_margin="10dp"
+        android:text="Zrób zdjęcie"
+        android:backgroundTint="@color/main_green"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:id="@+id/galleryButton"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:layout_width="0dip"
+        android:layout_margin="10dp"
+
+        android:text="Galeria"
+        android:backgroundTint="@color/main_green"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuń element"
+            android:backgroundTint="@color/main_green"
+            android:layout_margin="10dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Przycisk Zapisz -->
+        <Button
+            android:backgroundTint="@color/main_green"
+            android:layout_margin="10dp"
+            android:id="@+id/saveButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zapisz"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="titleTextView" type="id" />
+    <item name="weightTextView" type="id" />
+    <item name="lengthTextView" type="id" />
+    <item name="placeTextView" type="id" />
+    <item name="dateTextView" type="id" />
+    <item name="noteTextView" type="id" />
+    <item name="mapView" type="id" />
+</resources>

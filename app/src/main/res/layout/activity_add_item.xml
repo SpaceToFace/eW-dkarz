@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/speciesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gatunek"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Waga (kg)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/lengthEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Długość (m)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/noteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notatka"
+            android:inputType="text" />
+
+        <!-- 🔽 Spinner do wyboru miejsca połowu -->
+        <Spinner
+            android:id="@+id/waterTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+             />
+
+        <FrameLayout
+            android:id="@+id/mapFrame1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="429dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Podgląd zdjęcia"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <Button
+                android:backgroundTint="@color/main_green"
+                android:id="@+id/photoButton"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_width="0dip"
+                android:layout_margin="10dp"
+                android:text="Zrób zdjęcie"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:backgroundTint="@color/main_green"
+                android:id="@+id/galleryButton"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_margin="10dp"
+                android:text="Galeria"
+                android:layout_marginTop="8dp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:backgroundTint="@color/main_green"
+            android:layout_margin="10dp"
+
+            android:id="@+id/saveButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zapisz"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

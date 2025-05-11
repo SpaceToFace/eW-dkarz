@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">test</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="large_text">Amur biały to duża słodkowodna ryba z rodziny karpiowatych, jedyny przedstawiciel rodzaju Ctenopharyngodon. Jego pierwotny zasięg jest trudny do ustalenia. Hodowany od X wieku. Ze względu na zalety użytkowe aklimatyzowany w wielu krajach – w Europie od 1950 roku. Żyje w nizinnych rzekach oraz jeziorach. Dorasta do 150 cm długości i 45 kg masy ciała. Ciało wydłużone, nieznacznie bocznie spłaszczone, walcowate, z szeroką głową. Grzbiet ciemnozielony do czarnozielonego, boki jaśniejsze żółtozielonkawe. Łuski ciemno obramowane tworzą wzór siatki. Młode osobniki żywią się zooplanktonem. Przy długości 6-10 cm zaczyna się odżywiać głównie roślinnością wodną. W tym czasie jego przewód pokarmowy wydłuża się do około 2-2,5 raza długości ciała. Młode osobniki żywią się zooplanktonem. Przy długości 6-10 cm zaczyna się odżywiać głównie roślinnością wodną. W tym czasie jego przewód pokarmowy wydłuża się do około 2-2,5 raza długości ciała.
+        Żeruje w wodzie o temperaturze od około 12 °C. Dorasta do 150 cm długości i 45 kg masy ciała. Ciało wydłużone, nieznacznie bocznie spłaszczone, walcowate, z szeroką głową. Brzuch lekko zaokrąglony. Pysk tępy, zagłębiony między otworami nosowymi. Otwór gębowy w położeniu końcowym. Dwa szeregi zębów gardłowych, zęby na brzegach skośnie ścięte, bocznie ścieśnione i piłkowato pofałdowane. Na pokrywach skrzelowych wyraźne promieniste rowki. Łuski duże, 40–42 w linii bocznej. Poniżej linii bocznej 5 rzędów łusek. W czasie zimowania jego ciało pokrywa się grubą warstwą śluzu, który odrywa się czasem od ciała ryby i spływa z prądem rzeki. W płetwie grzbietowej 10, a w odbytowej 11 promieni. Grzbiet ciemnozielony do czarnozielonego, boki jaśniejsze żółtozielonkawe. Łuski ciemno obramowane tworzą wzór siatki.</string>
+
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string-array name="water_types">
+        <item>Jezioro</item>
+        <item>Rzeka</item>
+        <item>Staw</item>
+        <item>Morze</item>
+        <item>Ocean</item>
+    </string-array>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "532795707769",
+    "project_id": "fishingapplication-bc0b6",
+    "storage_bucket": "fishingapplication-bc0b6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532795707769:android:f45f05430b79b48cf0dfa8",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE4pZHRofGHkcp0IEQD4cvbeGdCcQCO10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

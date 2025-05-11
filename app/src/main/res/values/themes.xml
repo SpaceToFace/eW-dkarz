@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Test" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Test" parent="Base.Theme.Test" />
+
+    <style name="colored_checkBox" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorAccent">@color/main_green</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColor">@color/main_green</item>
+    </style>
+
+    <style name="EditTextNoHighlight" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorControlActivated">@android:color/transparent</item>
+    </style>
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Inne atrybuty stylu aplikacji -->
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+</resources>

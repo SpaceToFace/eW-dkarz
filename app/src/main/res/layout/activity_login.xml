@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/weather_space_border"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zaloguj"
+                android:id="@+id/login"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/user_name"
+                android:background="@drawable/custom_edit_text"
+                android:drawableEnd="@drawable/baseline_alternate_email_24"
+                android:singleLine="true"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:layout_marginTop="40dp"
+                android:drawableTint="@color/white"
+                android:hint="Adres e-mail"
+                android:textColor="@color/white"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/user_password"
+                android:background="@drawable/custom_edit_text"
+                android:drawableEnd="@drawable/baseline_visibility_off_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:layout_marginTop="20dp"
+                android:drawableTint="@color/white"
+                android:hint="Hasło użytkownika"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="@color/white"/>
+
+
+
+            <CheckBox
+                android:id="@+id/remember_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/colored_checkBox"
+                android:textColor="@color/white"
+                android:text="Zapamiętaj mnie" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="@color/main_green"
+                android:text="Zaloguj"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/sign_up_text"
+        android:text="Nie masz jeszcze konta? Utwórz teraz!"
+        android:textAlignment="center"/>
+
+</LinearLayout>
